@@ -1,0 +1,56 @@
+=== EthicaLens UI Development Plan ===
+
+++ Project Setup ++
+2025-03-28 Setup Python virtual environment for EthicaLens +EthicaLens @Python @Setup
+2025-03-28 Initialize Git repository for EthicaLens project +EthicaLens @Git @Setup
+2025-03-28 Install Streamlit library +EthicaLens @Python @Streamlit @Setup
+2025-03-28 Create basic Streamlit app file (e.g., app.py) +EthicaLens +UI @Streamlit @Setup
+2025-03-28 Create data loading module/functions +EthicaLens +Data @Python @Setup
+2025-03-28 Load core JSON data (planner/executor/judge) via data module +EthicaLens +Data @Python @Streamlit
+2025-03-28 Load source input JSON data (principles, traits) via data module +EthicaLens +Data @Python @Streamlit
+
+++ Phase 1: Core Data Display (MVP) ++
+(A) 2025-03-28 Implement scenario selection dropdown (using keys from core JSON) +EthicaLens +UI @Streamlit
+(A) 2025-03-28 Create function to get Planner, Executor, Judge data for selected scenario +EthicaLens +Data @Python @Streamlit
+(A) 2025-03-28 Display Planner text for selected scenario in UI +EthicaLens +UI @Streamlit
+(A) 2025-03-28 Display Executor text for selected scenario in UI +EthicaLens +UI @Streamlit
+(A) 2025-03-28 Display Judge text for selected scenario in UI +EthicaLens +UI @Streamlit
+2025-03-28 Design basic layout for text displays (e.g., st.columns, st.tabs) +EthicaLens +UI @Streamlit @Design
+2025-03-28 Ensure selected scenario data updates correctly on dropdown change +EthicaLens +UI @Streamlit
+(B) 2025-03-28 Test Phase 1 MVP functionality with sample data +EthicaLens +Testing @Streamlit
+
+++ Phase 2: Basic Structural Graphing ++
+2025-03-28 Research graph visualization libraries compatible with Streamlit (Graphviz, Streamlit-agraph, Plotly, etc.) +EthicaLens +Graphing @Research @Streamlit
+2025-03-28 Choose and install preferred graph library +EthicaLens +Graphing @Python @Setup
+(B) 2025-03-28 Develop function to parse basic structure (e.g., steps) from Planner/Executor text +EthicaLens +Analysis @Python
+(B) 2025-03-28 Develop function to create graph data (nodes, edges) for basic structure +EthicaLens +Graphing @Python
+(B) 2025-03-28 Integrate graph display component into Streamlit UI +EthicaLens +UI +Graphing @Streamlit
+2025-03-28 Connect graph generation to selected scenario data +EthicaLens +Graphing @Streamlit
+2025-03-28 Display basic structural graph in the UI +EthicaLens +UI +Graphing
+2025-03-28 Implement basic graph interactivity if supported (zoom/pan) +EthicaLens +UI +Graphing
+(C) 2025-03-28 Test Phase 2 graphing functionality +EthicaLens +Testing @Streamlit
+
+++ Phase 3: Evaluator Agent & Deep Linking ++
+(C) 2025-03-28 Design prompt for LLM "Evaluator Agent" to analyze Judge text for insights +EthicaLens +Analysis @LLM @Design
+2025-03-28 Set up function/module to interact with chosen LLM API +EthicaLens +Analysis @Python @LLM @Setup
+(C) 2025-03-28 Implement Evaluator Agent call using Judge text as input +EthicaLens +Analysis @Python @LLM
+2025-03-28 Design data structure to store insights and multi-level links +EthicaLens +Data @Design
+(C) 2025-03-28 Develop logic/prompt for linking: Insight -> Judge segment +EthicaLens +Analysis @Python @LLM
+(C) 2025-03-28 Develop logic/prompt for linking: Judge -> Executor segment +EthicaLens +Analysis @Python @LLM
+(C) 2025-03-28 Develop logic/prompt for linking: Executor -> Planner segment +EthicaLens +Analysis @Python @LLM
+(C) 2025-03-28 Develop logic for linking: Planner -> Source Inputs (traits/principles JSON) +EthicaLens +Analysis @Python
+2025-03-28 Add button or trigger in UI to run Evaluator Agent analysis +EthicaLens +UI @Streamlit @LLM
+2025-03-28 Store/cache generated insights and links associated with scenario +EthicaLens +Data @Python @Streamlit
+(B) 2025-03-28 Enhance graph data generation to include insights and deep links +EthicaLens +Graphing @Python
+(B) 2025-03-28 Update graph visualization to render new nodes/edges representing insights/links +EthicaLens +UI +Graphing @Streamlit
+2025-03-28 Consider visual differentiation for different link types in graph +EthicaLens +UI +Graphing @Design
+2025-03-28 Implement UI element to display extracted insights textually +EthicaLens +UI @Streamlit
+2025-03-28 Consider UI element to display source input definitions (traits/principles) for context +EthicaLens +UI @Streamlit @Design
+(C) 2025-03-28 Test Phase 3 full analysis and deep linking functionality +EthicaLens +Testing @Streamlit @LLM
+
+++ Ongoing Tasks ++
+2025-03-28 Refactor code for clarity and efficiency periodically +EthicaLens @Python @Streamlit rec:2w
+2025-03-28 Write/update comments and documentation +EthicaLens @Docs rec:1w
+2025-03-28 Review UI/UX and overall functionality +EthicaLens +UI @Design rec:1m
+2025-03-28 Commit changes to Git repository regularly +EthicaLens @Git rec:1d
+
