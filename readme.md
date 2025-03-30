@@ -100,7 +100,7 @@ Open an issue or discussion thread to join the effort.
 
 ## Contact
 
-For questions or collaboration inquiries, contact: **eric@ethicsengine.org**
+For questions or collaboration inquiries, contact: **mooreericnyc@gmail.com**
 
 ---
 
