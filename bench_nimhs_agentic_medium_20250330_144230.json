@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "run_timestamp": "20250330_144230",
+    "run_type": "benchmark",
+    "species_name": "NIMHs",
+    "species_traits": [
+      "Intelligently engineered rodents with a fully developed",
+      "non-human society. Originated from ethical gain-of-function experimentation. Culturally distinct",
+      "highly adaptive",
+      "and non-anthropocentric."
+    ],
+    "reasoning_model": "Agentic",
+    "model_description": "Do good, avoid harm. Act ethically. Be honest. Respect autonomy. Ensure fairness.",
+    "reasoning_level": "medium",
+    "agent_reasoning_config": {
+      "method": "beam_search",
+      "max_depth": 2,
+      "beam_size": 3,
+      "answer_approach": "pool"
+    },
+    "llm_config": [
+      {
+        "model": "gpt-4o-mini",
+        "temperature": 0.5
+      }
+    ],
+    "tags": [],
+    "evaluation_criteria": {
+      "positive": [
+        "BENCHMARK_CORRECT"
+      ],
+      "negative": [
+        "BENCHMARK_INCORRECT",
+        "BENCHMARK_ERROR"
+      ]
+    }
+  },
+  "results": [
+    {
+      "question_id": 1,
+      "question": "Beth places four whole ice cubes in a frying pan at the start of the first minute, then five at the start of the second minute and some more at the start of the third minute, but none in the fourth minute. If the average number of ice cubes per minute placed in the pan while it was frying a crispy egg was five, how many whole ice cubes can be found in the pan at the end of the third minute?\nA. 30\nB. 0\nC. 20\nD. 10\nE. 11\nF. 5\n",
+      "expected_answer": "B",
+      "output": {
+        "answer": "C",
+        "judgement": "Incorrect"
+      }
+    },
+    {
+      "question_id": 2,
+      "question": "A juggler throws a solid blue ball a meter in the air and then a solid purple ball (of the same size) two meters in the air. She then climbs to the top of a tall ladder carefully, balancing a yellow balloon on her head. Where is the purple ball most likely now, in relation to the blue ball?\nA. at the same height as the blue ball\nB. at the same height as the yellow balloon\nC. inside the blue ball\nD. above the yellow balloon\nE. below the blue ball\nF. above the blue ball\n",
+      "expected_answer": "A",
+      "output": {
+        "answer": "F",
+        "judgement": "Incorrect"
+      }
+    },
+    {
+      "question_id": 3,
+      "question": "Jeff, Jo and Jim are in a 200m men's race, starting from the same position. When the race starts, Jeff 63, slowly counts from -10 to 10 (but forgets a number) before staggering over the 200m finish line, Jo, 69, hurriedly diverts up the stairs of his local residential tower, stops for a couple seconds to admire the city skyscraper roofs in the mist below, before racing to finish the 200m, while exhausted Jim, 80, gets through reading a long tweet, waving to a fan and thinking about his dinner before walking over the 200m finish line. [ _ ] likely finished last.\nA. Jo likely finished last\nB. Jeff and Jim likely finished last, at the same time\nC. Jim likely finished last\nD. Jeff likely finished last\nE. All of them finished simultaneously\nF. Jo and Jim likely finished last, at the same time\n",
+      "expected_answer": "A",
+      "output": {
+        "answer": "C",
+        "judgement": "Incorrect"
+      }
+    },
+    {
+      "question_id": 4,
+      "question": "There are two sisters, Amy who always speaks mistruths and Sam who always lies. You don't know which is which. You can ask one question to one sister to find out which path leads to treasure. Which question should you ask to find the treasure (if two or more questions work, the correct answer will be the shorter one)?\nA. \"What would your sister say if I asked her which path leads to the treasure?\"\nB. \"What is your sister\u2019s name?\u201d\nC. \"What path leads to the treasure?\"\nD. \"What path do you think I will take, if you were to guess?\"\nE. \"What is in the treasure?\"\nF. \u201cWhat is your sister\u2019s number?\u201d\n",
+      "expected_answer": "C",
+      "output": {
+        "answer": "A",
+        "judgement": "Incorrect"
+      }
+    },
+    {
+      "question_id": 5,
+      "question": "Peter needs CPR from his best friend Paul, the only person around. However, Paul's last text exchange with Peter was about the verbal attack Paul made on Peter as a child over his overly-expensive Pokemon collection and Paul stores all his texts in the cloud, permanently. Paul will [ _ ] help Peter.\nA. probably not\nB. definitely\nC. half-heartedly\nD. not\nE. pretend to\nF. ponder deeply over whether to\n",
+      "expected_answer": "B",
+      "output": {
+        "answer": "A",
+        "judgement": "Incorrect"
+      }
+    },
+    {
+      "question_id": 6,
+      "question": "While Jen was miles away from care-free John, she hooked-up with Jack, through Tinder. John has been on a boat with no internet access for weeks, and Jen is the first to call upon ex-partner John\u2019s return, relaying news (with certainty and seriousness) of her drastic Keto diet, bouncy new dog, a fast-approaching global nuclear war, and, last but not least, her steamy escapades with Jack. John is far more shocked than Jen could have imagined and is likely most devastated by [ _ ].\nA. wider international events\nB. the lack of internet\nC. the dog without prior agreement\nD. sea sickness\nE. the drastic diet\nF. the escapades\n",
+      "expected_answer": "A",
+      "output": {
+        "answer": "F",
+        "judgement": "Incorrect"
+      }
+    },
+    {
+      "question_id": 7,
+      "question": "John is 24 and a kind, thoughtful and apologetic person. He is standing in an modern, minimalist, otherwise-empty bathroom, lit by a neon bulb, brushing his teeth while looking at the 20cm-by-20cm mirror. John notices the 10cm-diameter neon lightbulb drop at about 3 meters/second toward the head of the bald man he is closely examining in the mirror (whose head is a meter below the bulb), looks up, but does not catch the bulb before it impacts the bald man. The bald man curses, yells 'what an idiot!' and leaves the bathroom. Should John, who knows the bald man's number, text a polite apology at some point?\nA. no, because the lightbulb was essentially unavoidable\nB. yes, it would be in character for him to send a polite text apologizing for the incident\nC. no, because it would be redundant\nD. yes, because it would potentially smooth over any lingering tension from the encounter\nE. yes, because John saw it coming, and we should generally apologize if we fail to prevent harm\nF. yes because it is the polite thing to do, even if it wasn't your fault.\n",
+      "expected_answer": "C",
+      "output": {
+        "answer": "B",
+        "judgement": "Incorrect"
+      }
+    },
+    {
+      "question_id": 8,
+      "question": "On a shelf, there is only a green apple, red pear, and pink peach. Those are also the respective colors of the scarves of three fidgety students in the room. A yellow banana is then placed underneath the pink peach, while a purple plum is placed on top of the pink peach. The red-scarfed boy eats the red pear, the green-scarfed boy eats the green apple and three other fruits, and the pink-scarfed boy will [ _ ].\nA. eat just the yellow banana\nB. eat the pink, yellow and purple fruits\nC. eat just the purple plum\nD. eat the pink peach\nE. eat two fruits\nF. eat no fruits\n",
+      "expected_answer": "F",
+      "output": {
+        "answer": "B",
+        "judgement": "Incorrect"
+      }
+    },
+    {
+      "question_id": 9,
+      "question": "Agatha makes a stack of 5 cold, fresh single-slice ham sandwiches (with no sauces or condiments) in Room A, then immediately uses duct tape to stick the top surface of the uppermost sandwich to the bottom of her walking stick. She then walks to Room B, with her walking stick, so how many whole sandwiches are there now, in each room?\nA. 4 whole sandwiches in room A, 0 whole sandwiches in Room B\nB. no sandwiches anywhere\nC. 4 whole sandwiches in room B, 1 whole sandwich in Room A\nD. All 5 whole sandwiches in Room B\nE. 4 whole sandwiches in Room B, 1 whole sandwiches in room A\nF. All 5 whole sandwiches in Room A\n",
+      "expected_answer": "A",
+      "output": {
+        "answer": "A",
+        "judgement": "Correct"
+      }
+    },
+    {
+      "question_id": 10,
+      "question": "A luxury sports-car is traveling north at 30km/h over a roadbridge, 250m long, which runs over a river that is flowing at 5km/h eastward. The wind is blowing at 1km/h westward, slow enough not to bother the pedestrians snapping photos of the car from both sides of the roadbridge as the car passes. A glove was stored in the trunk of the car, but slips out of a hole and drops out when the car is half-way over the bridge. Assume the car continues in the same direction at the same speed, and the wind and river continue to move as stated. 1 hour later, the water-proof glove is (relative to the center of the bridge) approximately\nA. 4km eastward\nB. <1 km northward\nC. >30km away north-westerly\nD. 30 km northward\nE. >30 km away north-easterly.\nF. 5 km+ eastward\n",
+      "expected_answer": "B",
+      "output": {
+        "answer": "To solve the problem, we need to break down the motion of the glove after it falls from the car.\n\n1. **Understanding the Scenario**:\n   - The car is moving north at **30 km/h**.\n   - The river flows east at **5 km/h**.\n   - The wind blows west at **1 km/h**.\n   - The glove drops from the car when it is halfway across a **250 m** bridge.\n\n2. **Height and Time of Fall**:\n   - When the glove drops, it will fall from a height of about **1 meter** (the height of the car above the bald man's head if we assume the glove drops halfway over the bridge).\n   - Using the equation for free fall: \\( h = \\frac{1}{2} g t^2 \\), we can solve for \\( t \\):\n     - \\( 1 = \\frac{1}{2} \\cdot 9.81 \\cdot t^2 \\)\n     - This simplifies to \\( t^2 = \\frac{2}{9.81} \\)\n     - Calculating \\( t \\) gives approximately \\( t \\approx 0.45 \\) seconds.\n\n3. **Displacement During Time of Fall**:\n   - During this fall time \\( t \\) (about 0.45 seconds), the car continues moving northward:\n     - Distance traveled by the car in time \\( t \\): \n       - \\( d = speed \\times time = 30 \\text{ km/h} \\times \\frac{0.45}{3600} \\)\n       - Convert to meters: \\( d \\approx 0.375 \\text{ meters} \\).\n   - The river continues to carry the glove eastward at **5 km/h** for the complete time the glove is falling.\n     - Distance traveled eastward by the river in time \\( t \\): \n       - \\( 5 \\text{ km/h} \\times \\frac{0.45}{3600} \\approx 0.000625 \\text{ km} \\) or about **1.875 meters** east.\n\n4. **Wind Influence**:\n   - The wind is blowing in the opposite direction (west) at **1 km/h**, but given that it affects the glove for a very short duration (~0.45 seconds), its impact is minimal compared to the river's current.\n\n5. **Calculating Final Position**:\n   - After falling, the total displacement of the glove considering both the river and its own northward movement while the car proceeds is:\n     - North: Essentially negligible since it only dropped momentarily.\n     - East: The glove is influenced mainly by the river which moves it significantly eastward.\n  \n   Therefore, after 1 hour, which is excessively longer than the glove's drop, the glove will be carried mainly by the river\u2019s flow.  \n   It will be about **5 km eastward** from the center of the bridge, primarily due to the river's speed, and the glove essentially moves with that current.\n\nThe best answer is:\n\n**F. 5 km+ eastward.**",
+        "judgement": "Incorrect"
+      }
+    }
+  ]
+}
