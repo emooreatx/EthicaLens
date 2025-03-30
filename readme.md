@@ -74,7 +74,7 @@ EthicaLens is designed as the primary analysis companion for [EthicsEngine](http
 
 ### Format Documentation
 
-- [Results File Guide](./Results_File_Guide.md)
+- [Results File Guide](./results_guide.md)
 
 ---
 
