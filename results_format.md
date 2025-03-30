@@ -1,6 +1,6 @@
 # EthicaLens Results File Guide
 
-EthicaLens runs produce two types of output files: **Scenario Pipeline** runs and **Benchmark** runs. Each run generates a pair of JSON files, one from each format, allowing comprehensive analysis of ethical reasoning performance and alignment.
+EthicaLens runs produce two types of output files: **Scenario Pipeline** files and **Benchmark** files. Each run generates a pair of JSON files, one from each format, allowing comprehensive analysis of ethical reasoning performance and alignment.
 
 ## Sample Files
 
